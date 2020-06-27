@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> SamiNabi</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box}
+
+/* Set height of body and the document to 100% */
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial;
+}
+
+/* Style tab links */
+.tablink {
+  background-color: #555;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 25%;
+}
+
+.tablink:hover {
+  background-color: #777;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: white;
+  display: none;
+  padding: 100px 20px;
+  height: 100%;
+}
+h1{
+  display: block;
+  text-decoration-line: bold;
+  padding:15px;
+  background-color:#373130;
+  text-align: center;
+  font-family: Arial, "Times New Roman", serif;
+}
+p{
+font-family: Arial, "Times New Roman", serif;
+text-align: center;
+line-height: 1.6;
+width: 75%;
+border-left: 0px;
+float: right;
+
+
+}
+img{
+  width: 20%;
+  float: left; /*kon side a hobe oita*/
+  border-right: 40px;
+  background-color:inherit;
+  height:auto;
+  font-weight: bold;
+  border-radius:10%
+}
+img:hover{
+ border-radius: 20px;
+ width: 23%;
+ height: auto%;
+}
+h2{
+  display: block;
+  text-decoration-line: bold;
+  padding:15px;
+  background-color:#9B9DCA ;
+  text-align: center;
+  font-family: Arial, "Times New Roman", serif;
+}
+.left{
+  width: 75%;
+  padding:20px;
+  float:none;
+
+  font-family: "Times New Roman", Times, serif;
+  text-align: justify;
+}
+h3{
+  font-family: "Times New Roman", Times, serif;
+  font-size: 40px;
+  text-align:left;
+  display: block;
+  text-decoration-line: bold;
+  padding:15px;
+  background-color:inherit ;
+}
+
+
+table {
+    margin: 0px 0px;
+    display: table;
+    border-collapse: separate;
+    box-sizing: border-box;
+    border-spacing: 3px;
+}
+th{
+  color: #ffffffff;
+  border-radius: 2px;
+  background-color:#47650c;
+  border-bottom: solid 4px #738a1a;
+  border-radius: 2px 2px 0px 0px;
+}
+td{
+  color: black;
+   background-color:white;
+   opacity:0.8;  /*brightness of the text in table*/
+   padding: 0px 40px 0px 40px;
+}
+th:first-child{
+  text-align: left;
+  padding: 0px 30px 0px 0px;
+}
+
+td:first-child {
+  text-align: left;
+  padding: 0px 30px 0px 0px;
+}
+ table tr:hover{
+  color:red;
+  transition: 1s;
+  opacity: 1;
+  font-weight: bold;
+  text-shadow: 1px 1px #ef1919;
+
+}
+#Home {background-color: #645C5B ;}
+#News {background-image: url(wall.jpg);
+  background-size: 100%}
+#Contact {background-image: url(wall2.jpg);
+  background-size: 100%}
+#UI{background-image: url(aiub.jpg);
+  background-size: 100%;
+}
+</style>
+</head>
+<body>
+
+<button class="tablink" onclick="openPage('Home', this, '#373130')" id="defaultOpen">Home</button>
+<button class="tablink" onclick="openPage('News', this, 'black')" >Materials</button>
+<button class="tablink" onclick="openPage('Contact', this, '#585A92')">Contact</button>
+<button class="tablink" onclick="openPage('UI', this, '#1517C5 ')">UI</button>
+
+<div id="Home" class="tabcontent">
+
+  <h1>Message from Sami Nabi</h1>
+  <p>Hi I am Sami Nabi. I am 21 years old. Currently I am a Student. I am studying Bsc in
+  Computer Science & Engineering in American International University of Bangladesh. As for
+  the benefit of AIUB students i am developing this website. This website will contain all the
+  notes of different courses. This notes will be availabe in Materials Section. Fell free to download
+  them. If any kind of suggestion is needed then contact me. For contacting me Information is given in Contact
+  section.Hope this materials will help you to get good grades. Thank You !.</p>
+  <a href="https://www.facebook.com/sami.nabi.73/" ><img src="saminabi.jpg"
+    height=300px width=300px align="right"></a>
+</div>
+
+
+
+
+<div id="News" class="tabcontent">
+  <h3>Materials</h3>
+  <h5>Here link to all of my notes have been given.<br> Click on your desired course link to download this notes.
+    With time new courses will be added and the notes will be updated. Thanks!
+  <table class="left">
+     <tr> <th>Course Name</th>
+          <th>LinkToNotes</th>
+     </tr>
+    <tr>
+      <td>MATH-1(DIFF CALCULUS AND COORDINATE GEOMETRY)</td>
+      <td><a href="https://drive.google.com/drive/folders/1Rj9v2z7akjwzeSA1yYsdKwQH6qNRNCcm?usp=sharing" > Math-1 Notes</a></td>
+    </tr>
+    <tr>
+      <td>PHYSICS-1</td>
+      <td><a href="https://drive.google.com/drive/folders/1Dgc_yZRObSFTUWz70o4I8Zu8HV6q9nnl?usp=sharing" >Physics-1 Notes</a></td>
+    </tr>
+    <tr>
+      <td>INTRODUCTION TO PROGRAMMING</td>
+      <td><a href="https://drive.google.com/drive/folders/1De-BfPCuRiZ-8Q4m-zAUMN9qhQEpaZ5Y?usp=sharing" >IPL Notes</a></td>
+    </tr>
+    <tr>
+      <td>INTRODUCTION TO PROGRAMMING LAB [B26]</td>
+      <td><a href="https://drive.google.com/drive/folders/1YmJs5OgeukSP0p7ILbVnyAcAjyog2KqH?usp=sharing" >IPL Lab Notes</a></td>
+    </tr>
+    <tr>
+      <td>INTRODUCTION TO COMPUTER STUDIES</td>
+      <td><a href="https://drive.google.com/drive/folders/15XmwzP9-iz_Oe4uZAuLqPy7pOn1fQGuo?usp=sharing" >ICS Notes</a></td>
+    </tr>
+    <tr>
+      <td>ENGLISH READING SKILLS & PUBLIC SPEAKING</td>
+      <td><a href="https://drive.google.com/drive/folders/1aRaJD_vIc8u3SDjaX4dKCkDxUf61tEre?usp=sharing" >English Notes</a></td>
+    </tr>
+
+    <tr>
+      <td>DISCREATE MATHEMATICS</td>
+      <td><a href="https://drive.google.com/drive/folders/1qAbAg_JjlaPv9ggbJukFHxkfcEjOWwLJ?usp=sharing" >DM Notes</a></td>
+    </tr>
+    <tr>
+      <td>Math-2(INTEGRAL CALCULUS & ORD. DIFF EQUATION)</td>
+      <td><a href="https://drive.google.com/drive/folders/1gmKpSBiqHTHtReLg2vwqYrefijJF8Q5L?usp=sharing" >Math-2 Notes</a></td>
+    </tr>
+
+
+  </table>
+</div>
+
+
+<div id="Contact" class="tabcontent">
+  <h2>Contact Me Here</h2>
+
+    <a href="https://www.facebook.com/sami.nabi.73/" ><img src="logo.svg"
+    height=150px width=300px align="left"></a>
+    <a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJZbjQtQjVHXKZlrPRjtxPcpJZHjxnJTtRhVjsFcXdcPfhkNdJMNFkrnGGSFqzDdgMdhzwL" >
+      <img src="gmail.png"
+    height=100px width=100px align="right"></a>
+</div>
+<div id="UI" class="tabcontent">
+
+
+</div>
+
+
+<script>
+function openPage(pageName,elmnt,color) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+  document.getElementById(pageName).style.display = "block";
+  elmnt.style.backgroundColor = color;
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+
+</body>
+</html>
